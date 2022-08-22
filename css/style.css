@@ -73,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
-  padding: 7.5px 10px;
+  padding: 7.5px 0px;
   background-color: #A9BFE4;
 }
-
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,11 +91,9 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header__logo {
   height: 55px;
 }
-
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
-
 .header__link {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -112,4 +109,42 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.view {
+  padding: 35px 0;
+}
+.view .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.view__text {
+  width: 300px;
+}
+.view__title {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #351F21;
+}
+.view__subtitle {
+  margin-top: 13px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #351F21;
+}
+.view__img {
+  width: 390px;
 }

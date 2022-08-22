@@ -20,6 +20,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     padding: 0 10px;
 }
 
+.title{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: #351F21;
+}
+
+.text{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #351F21;
+}
+
 .header{
     padding: 7.5px 0px;
     background-color: #A9BFE4;
@@ -50,36 +68,92 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .view {
-    padding: 35px 0;
+    padding: 70px 0;
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__text {
-        width: 300px;
     }
 
     &__title {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
-        color: #351F21;
+        
     }
 
     &__subtitle {
         margin-top: 13px;
+    }
+
+    &__img{
+        width: 500px;
+    }
+}
+
+.about {
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
+    }
+
+    &__item {
+        width: 33.3333%;
+        padding: 216px 80px 14px 80px;
+        
+    }
+
+    &__item:nth-child(1){
+        background: url(..//img/bouquets.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__item:nth-child(2){
+        background: url(..//img/natural_flowers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__item:nth-child(3){
+        background: url(..//img/own_bouquet.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__button {
+        display: block;
+        text-align: center;
+        padding: 6px 20px;
+        background: #A9BFE4;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'Source Sans Pro';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        color: #351F21;
+        color: #FFFFFF;
     }
 
-    &__img{
-        width: 390px;
+    &__information {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        margin-top: 11px;
+    }
+
+    &__img {
+        width: 592px;
     }
 }
